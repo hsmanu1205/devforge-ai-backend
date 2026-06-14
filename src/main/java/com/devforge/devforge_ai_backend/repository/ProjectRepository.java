@@ -1,8 +1,14 @@
 package com.devforge.devforge_ai_backend.repository;
 
 import com.devforge.devforge_ai_backend.entity.Project;
+import com.devforge.devforge_ai_backend.entity.User;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ProjectRepository extends JpaRepository<Project, Long> {
+import java.util.List;
 
+public interface ProjectRepository
+        extends JpaRepository<Project, Long> {
+
+    List<Project> findByUser(User user);
 }
