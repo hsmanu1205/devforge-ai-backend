@@ -1,40 +1,138 @@
-# DevForge AI Backend
+# 🚀 DevForge AI Backend
 
-A Spring Boot REST API for managing software projects.
+<div align="center">
 
-## Features
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5.3-6DB33F?style=for-the-badge\&logo=springboot\&logoColor=white)
+![Java](https://img.shields.io/badge/Java-21-ED8B00?style=for-the-badge\&logo=openjdk\&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-4169E1?style=for-the-badge\&logo=postgresql\&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-Authentication-black?style=for-the-badge\&logo=jsonwebtokens)
+![Render](https://img.shields.io/badge/Hosted_on-Render-46E3B7?style=for-the-badge\&logo=render\&logoColor=black)
 
-* CRUD Operations
-* PostgreSQL Database
-* Spring Data JPA
-* DTO Pattern
-* Validation
-* Global Exception Handling
-* Swagger/OpenAPI Documentation
+### AI-Powered Full Stack Project Generator Backend
 
-## Tech Stack
+Secure Spring Boot REST API powering DevForge AI.
 
-* Java 21
-* Spring Boot 3.5
-* PostgreSQL
-* Maven
+🌐 Live API: https://devforge-ai-backend.onrender.com
 
-## API Endpoints
+</div>
 
-* GET /api/projects
-* GET /api/projects/{id}
-* POST /api/projects
-* PUT /api/projects/{id}
-* DELETE /api/projects/{id}
+---
 
-## Run Locally
+## ✨ Features
+
+* 🔐 JWT Authentication
+* 👤 User Registration & Login
+* 🤖 AI Project Generation
+* 📂 User-Specific Project Storage
+* 🗄 PostgreSQL Database
+* 🔒 Spring Security
+* 🌍 CORS Support
+* ☁️ Render Deployment
+* 📄 RESTful APIs
+
+---
+
+## 🛠 Tech Stack
+
+| Technology        | Usage                 |
+| ----------------- | --------------------- |
+| Java 21           | Backend Language      |
+| Spring Boot 3.5.3 | Framework             |
+| Spring Security   | Authentication        |
+| JWT               | Authorization         |
+| PostgreSQL        | Database              |
+| Hibernate/JPA     | ORM                   |
+| Maven             | Dependency Management |
+| Render            | Deployment            |
+
+---
+
+## 📡 API Endpoints
+
+### Authentication
+
+```http
+POST /api/auth/register
+POST /api/auth/login
+```
+
+### AI
+
+```http
+POST /api/ai/generate
+```
+
+### Projects
+
+```http
+GET    /api/projects
+POST   /api/projects
+DELETE /api/projects/{id}
+```
+
+---
+
+## 🗄 Database
+
+PostgreSQL Database hosted on Render.
+
+Features:
+
+* User Management
+* Project Storage
+* Authentication Records
+* Persistent Cloud Storage
+
+---
+
+## 🔒 Security
+
+* JWT Authentication
+* Password Encryption using BCrypt
+* Stateless Session Management
+* Protected API Routes
+* Spring Security Integration
+
+---
+
+## 🚀 Local Setup
+
+Clone Repository
 
 ```bash
-./mvnw spring-boot:run
+git clone https://github.com/hsmanu1205/devforge-ai-backend.git
 ```
 
-Swagger UI:
+Install Dependencies
 
+```bash
+mvn clean install
 ```
-http://localhost:8081/swagger-ui.html
+
+Run Application
+
+```bash
+mvn spring-boot:run
 ```
+
+---
+
+## 🌐 Production Deployment
+
+Hosted on Render:
+
+https://devforge-ai-backend.onrender.com
+
+---
+
+## 👨‍💻 Author
+
+### Harshit Singh
+
+🔗 GitHub: https://github.com/hsmanu1205
+
+---
+
+## ⭐ Support
+
+If you like this project, please consider giving it a ⭐ on GitHub.
